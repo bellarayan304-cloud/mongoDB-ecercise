@@ -1,0 +1,32 @@
+{
+  _id: ObjectId('6abd47b1d56e25df1a3aa29a'),
+  name: 'layla',
+  Address: {
+    degmada: 'Buurcad',
+    xafada: 'Rafiyo Raxo',
+    wadad: 'Biyo Galinta'
+  },
+  email: 'layla@gmail.com',
+  age: 22,
+  courses: [
+    'tailwain',
+    'js',
+    'React'
+  ]
+},
+{
+  _id: ObjectId('6abd2c1cd56e25df1a3aa299'),
+  name: 'Aisha',
+  Address: {
+    degmada: 'Bosaso',
+    xafada: 'Buurcad',
+    wadad: 'Biyo Galinta'
+  },
+  email: 'aisha23@gmail.com',
+  age: 20,
+  courses: [
+    'java',
+    'js',
+    'React'
+  ]
+}

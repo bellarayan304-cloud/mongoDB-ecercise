@@ -1,0 +1,63 @@
+db.person.updateOne(
+  {name:"faarax"},
+  {$set:{email:"layla123@gmail.com"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+db.person.updateOne(
+  {name:"faarax"},
+  {$inc:{points:10}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+db.person.updateOne(
+  {name:"faarax"},
+  {$push:{courses:"react"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+db.person.updateOne(
+  {name:"faarax"},
+  {$pull:{courses:"som"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+db.person.updateOne(
+  {name:"layla"},
+  {
+    $set:{email:"laylaryan23@gmail.com"},
+    $inc:{points:30},
+    $push:{courses:"som"}
+  }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}

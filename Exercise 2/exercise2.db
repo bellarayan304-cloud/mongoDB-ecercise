@@ -1,0 +1,208 @@
+db.pepole.find({
+  age:{$gt:20}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+{
+  _id: ObjectId('6abe369291ec5e488094cbbe'),
+  name: 'amran',
+  age: 25,
+  email: 'amran22@gmail.com',
+  courses: [
+    'mongodb'
+  ]
+}
+
+db.pepole.find({
+  courses:"react"
+})
+
+db.pepole.find({
+  courses:"react"
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+
+db.pepole.find({
+  name:{$regex:/A/}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+
+db.pepole.find({
+  age:{$in:[19,25]}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbd'),
+  name: 'fatima',
+  age: 19,
+  email: 'fatima@gmail.com',
+  courses: [
+    'js',
+    'css'
+  ]
+}
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbe'),
+  name: 'amran',
+  age: 25,
+  email: 'amran22@gmail.com',
+  courses: [
+    'mongodb'
+  ]
+}
+
+
+db.pepole.find({
+  email:{$not:/@gmail/}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbb'),
+  name: 'layla',
+  age: 20,
+  courses: [
+    'react',
+    'js',
+    'tailiwind'
+  ]
+}
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+
+db.pepole.find({
+  courses:{$in:["react","js"]}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbb'),
+  name: 'layla',
+  age: 20,
+  courses: [
+    'react',
+    'js',
+    'tailiwind'
+  ]
+}
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+{
+  _id: ObjectId('6abe369291ec5e488094cbbd'),
+  name: 'fatima',
+  age: 19,
+  email: 'fatima@gmail.com',
+  courses: [
+    'js',
+    'css'
+  ]
+}
+
+db.pepole.find({
+  name:{$regex:/m/}
+})
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbd'),
+  name: 'fatima',
+  age: 19,
+  email: 'fatima@gmail.com',
+  courses: [
+    'js',
+    'css'
+  ]
+}
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbe'),
+  name: 'amran',
+  age: 25,
+  email: 'amran22@gmail.com',
+  courses: [
+    'mongodb'
+  ]
+}
+
+db.pepole.find({
+  $or:[
+               {age:{$lt:23}},
+               {courses:"react"}
+  ]
+})
+{  
+ _id: ObjectId('6abe369291ec5e488094cbbb'),
+  name: 'layla',
+  age: 20,
+  courses: [
+    'react',
+    'js',
+    'tailiwind'
+  ]
+}
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbc'),
+  name: 'Apdalla',
+  age: 22,
+  courses: [
+    'react',
+    'Html',
+    'css'
+  ]
+}
+
+{
+  _id: ObjectId('6abe369291ec5e488094cbbd'),
+  name: 'fatima',
+  age: 19,
+  email: 'fatima@gmail.dev',
+  courses: [
+    'js',
+    'css'
+  ]
+}
