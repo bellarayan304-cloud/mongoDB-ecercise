@@ -1,0 +1,58 @@
+db.people.aggregate([
+  {$match:{
+    score:{$gt:85}
+  }}
+])
+{
+  _id: ObjectId('6ac05690212f7e1448b32ad7'),
+  name: 'Ayaan',
+  age: 25,
+  score: 90,
+  courses: [
+    'React',
+    'Node.js'
+  ]}
+
+{
+  _id: ObjectId('6ac05690212f7e1448b32ad9'),
+  name: 'Sagal',
+  age: 21,
+  score: 95,
+  courses: [
+    'MongoDB',
+    'Node.js',
+    'js'
+  ]
+}
+
+
+
+db.people.aggregate([
+  {$unwind:"$courses"},
+  {$group:{
+    _id:"$courses",
+    total:{$sum:1}
+          }},
+  {
+    $project:{course:"$_id",_id:0,total:1}
+    
+  },
+  {$sort:{total:-1}}
+  
+])
+{
+  total: 3,
+  course: 'js'
+}
+{
+  total: 2,
+  course: 'MongoDB'
+}
+{
+  total: 2,
+  course: 'React'
+}
+{
+  total: 2,
+  course: 'Node.js'
+}
